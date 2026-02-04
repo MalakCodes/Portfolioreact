@@ -1,0 +1,564 @@
+/* استيراد خطوط مشابهة للتصميم */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --primary-dark: #000000;
+  --accent-gold: #f9b132;
+  --accent-pink: #e94e77;
+  --bg-light: #f3f3f3;
+  --text-dark: #f9b132;
+  
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+/* الأشكال الدائرية في الخلفية */
+body::before, body::after {
+  content: "";
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(50px);
+  opacity: 0.4;
+}
+
+body::before {
+  background: var(--accent-gold);
+  top: -100px;
+  right: -100px;
+}
+/* الهيدر واللوجو */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 5%;
+  backdrop-filter: blur(10px); /* تأثير البلور على الخلفية */
+  position: fixed; /* تثبيت الهيدر */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* إضافة تأثير الظل */
+}
+
+/* تصميم روابط الهيدر لتأثير الزجاج */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--primary-dark);
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px); /* تأثير الزجاج */
+  -webkit-backdrop-filter: blur(10px); /* ضمان التوافق في المتصفحات القديمة */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* حد شفاف */
+  transition: all 0.3s ease; /* تأثير التحول */
+}
+
+/* تأثير hover عند التمرير */
+.nav-links li a:hover {
+  color: #f9b132; /* تغيير اللون عند التمرير */
+  background: rgba(255, 255, 255, 0.2); /* تغيير الخلفية عند التمرير */
+  transform: scale(1.05); /* تكبير الرابط عند التمرير */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3); /* إضافة تأثير الظل عند التمرير */
+}
+
+/* تأثير الحركة عند التمرير */
+.navbar a:hover {
+  text-shadow: 0 0 10px #f9b132, 0 0 20px #f9b132;
+}
+
+/* تخصيص العنوان */
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-dark);
+}
+
+
+/* إضافة مسافة بين الهيدر والمحتوى */
+body {
+  margin-top: 80px; /* المسافة التي ستظهر تحت الهيدر */
+}
+
+
+/* قسم الهوم (الجزء البنفسجي العلوي) */
+#home {
+  background: linear-gradient(135deg, #1d1033 0%, #171717 100%); /* الأرجواني إلى البنفسجي */
+  color: white;
+  padding: 80px 5%; /* المسافات الداخلية */
+  border-radius: 20px; /* الزوايا الدائرية */
+  text-align: center; /* توسيط النص */
+  position: relative;
+  height: 60vh; /* تقليل الارتفاع */
+  width: 80%; /* عرض أصغر */
+  margin: 0 auto; /* توسيط العنصر داخل الصفحة */
+}
+
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.home-text h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 0 0 5px #f9b132
+  
+}
+
+.home-text h4 {
+  font-family: Arial, Helvetica, sans-serif;
+ letter-spacing: 2px; /* تباعد الحروف */
+ margin-bottom: 15px; /* المسافة بين اسمك والنص التالي */
+  }
+
+.myphoto {
+  border-radius: 0; /* إزالة الزوايا الدائرية */
+  border: none; /* إزالة الحدود */
+  object-fit: cover;
+  margin-top: 20px;
+    width: 200px;  /* تحديد العرض */
+  height: 200px; /* تحديد الارتفاع */
+}
+
+
+/* استيراد الخط */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+/* تنسيق مكون "Who I am" */
+#aboutme {
+  
+  padding: 40px 5%; /* المسافات الداخلية */
+  text-align: center;
+  margin-top: 50px;
+  border-radius: 20px; /* زوايا دائرية */
+}
+
+/* تصميم العنوان */
+#aboutme h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem; /* تكبير حجم الخط */
+  font-weight: 700; /* جعل الخط عريض */
+  color: #2f1f4f; /* نفس اللون الأرجواني */
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px #f9b132
+ 
+}
+
+/* تنسيق النص */
+#aboutme p {
+ font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem; /* تحديد حجم الخط */
+  color: #333; /* اللون الرمادي الداكن */
+  line-height: 1.6; /* زيادة المسافة بين الأسطر */
+  text-align: justify; /* محاذاة النص بالكامل */
+  margin-top: 20px;
+  
+}
+
+
+/* قسم المهارات (تصميم البطاقة الداكنة) */
+#skills {
+  background: linear-gradient(135deg, #1d1033 0%, #171717 100%); /* الأرجواني إلى البنفسجي */
+  margin: 40px 5%;
+  padding: 40px;
+  border-radius: 30px;
+  color: white;
+}
+
+.drop-btn {
+  background: var(--accent-gold);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+  color: var(--primary-dark);
+}
+
+.skill {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+  border-radius: 50px;
+  margin: 5px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.skill img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+
+/* تخصيص عنوان القسم (المشاريع) */
+#projects h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  padding-top: 120px; /* تحريك العنوان إلى الأسفل */
+  margin-bottom: 40px; /* المسافة بين العنوان والمحتوى */
+  text-shadow: 0 0 5px #f9b132;
+  text-align: center;
+  color: #2f1f4f;
+}
+
+
+
+/* تخصيص عنوان القسم (التطوع) */
+#Volunteering h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  padding-top: 120px; /* تحريك العنوان إلى الأسفل */
+  margin-bottom: 40px; /* المسافة بين العنوان والمحتوى */
+  text-shadow: 0 0 5px #f9b132;
+  text-align: center;
+  color: #2f1f4f;
+}
+
+
+/* مظهر الزجاج (Glassmorphism) */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.25) !important;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+}
+
+/* تخصيص قسم التطوع والمشاريع */
+.slider-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #1d1033 0%, #171717 100%); /* الأرجواني إلى البنفسجي */
+  color: white;
+  padding: 80px 5%; /* المسافات الداخلية */
+  border-radius: 20px; /* الزوايا الدائرية */
+  text-align: center; /* توسيط النص */
+  height: 50vh; /* تقليل الارتفاع */
+  width: 80%; /* عرض أصغر */
+  margin: 0 auto; /* توسيط العنصر داخل الصفحة */
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory; /* يجعل البطاقة تقف في المنتصف تماماً عند التمرير */
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 20px 0;
+  scrollbar-width: none; /* إخفاء شريط التمرير */
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slide {
+  min-width: 300px; 
+  max-width: 350px;
+  scroll-snap-align: center; /* تثبيت البطاقة في المركز */
+  border-radius: 20px;
+  padding: 25px;
+  flex-shrink: 0; /* يمنع البطاقات من الانكماش */
+  transition: transform 0.4s ease;
+  background: linear-gradient(135deg, #1d1033 0%, #171717 100%); /* خلفية داكنة */
+  color: white; /* لون النص */
+}
+
+.slide:hover {
+  transform: scale(1.02);
+}
+
+
+
+
+/* تنسيق الأزرار الشفافة */
+.more-btn {
+  background: rgba(255, 255, 255, 0.2); /* خلفية شفافة */
+  color: white; /* لون النص أبيض */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* حد رقيق أبيض */
+  padding: 10px 20px;
+  border-radius: 20px; /* زوايا دائرية */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  backdrop-filter: blur(10px); /* تأثير ضبابي خلف الزر */
+  -webkit-backdrop-filter: blur(10px); /* لضمان التوافق في المتصفحات القديمة */
+}
+
+.more-btn:hover {
+  background: rgba(255, 255, 255, 0.4); /* تغيير اللون عند التمرير */
+  transform: scale(1.05); /* تكبير الزر قليلاً عند التمرير */
+}
+
+.prev-btn, .next-btn {
+  background: rgba(255, 255, 255, 0.2); /* خلفية شفافة */
+  color: white; /* لون النص */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* حد رقيق أبيض */
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  z-index: 5;
+  transition: 0.3s;
+  backdrop-filter: blur(10px); /* تأثير ضبابي خلف الزر */
+  -webkit-backdrop-filter: blur(10px); /* لضمان التوافق في المتصفحات القديمة */
+}
+
+.prev-btn:hover, .next-btn:hover {
+  background: rgba(255, 255, 255, 0.4); /* تغيير اللون عند التمرير */
+  transform: scale(1.1); /* تكبير الزر قليلاً عند التمرير */
+}
+
+
+
+/* ===== Footer Section ===== */
+footer {
+  text-align: center;
+  margin: 50px 0;
+}
+
+/* تخصيص الأيقونات في الفوتر */
+.social-icons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* تخصيص الأيقونات نفسها مع مظهر الزجاج */
+.social-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  
+  /* خلفية شفافة مع تأثير الزجاج */
+  background: rgba(255, 255, 255, 0.2); /* خلفية زجاجية */
+  
+  /* إضافة تأثير ضبابية خلف الأيقونة */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* لضمان التوافق مع المتصفحات القديمة */
+  
+  border: 1px solid rgba(255, 255, 255, 0.3); /* حد رقيق شفاف */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  font-size: 26px;
+  color: #e9d5ff; /* لون الأيقونة */
+  
+  transition: all 0.4s ease; /* تأثير التحويل */
+}
+
+
+/* تأثير عند التمرير */
+.social-icon:hover {
+  transform: translateY(-8px) scale(1.1); /* تحريك الأيقونة قليلاً */
+  
+  /* تغيير اللون الخلفي ليكون شفّافًا مع تأثير الزجاج */
+  background: rgba(255, 255, 255, 0.2); /* خلفية شفافة مع تأثير الزجاج */
+  
+  /* إضافة تأثير ضبابية خلف الأيقونة */
+  backdrop-filter: blur(500px);
+  -webkit-backdrop-filter: blur(50px); /* لضمان التوافق مع المتصفحات القديمة */
+
+  /* إضافة ظل حول الأيقونة */
+  box-shadow: 0 15px 35px rgba(240, 222, 156, 0.6); /* ظل خفيف مع لون بنفسجي */
+
+  /* تغيير اللون عند التمرير */
+  color: #ffffff; /* النص باللون الأبيض */
+}
+
+
+/* تصغير الأيقونات داخل الفوتر */
+.social-icons img {
+  width: 40px;
+  height: 40px;
+}
+
+
+/* الأنماط الخاصة بالظهور */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-out, transform 1s ease-out; /* التأثير عند الظهور */
+  transform: translateY(20px);  /* يمكن أن تغير الحركة إلى الأعلى أو أي حركة أخرى */
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0); /* تعيد العنصر إلى وضعه الطبيعي عند الظهور */
+}
+
+/* استجابة لشاشات الهواتف الصغيرة */
+@media (max-width: 768px) {
+  /* تغيير حجم النصوص في العناوين */
+  .navbar .logo {
+    font-size: 1.2rem;
+  }
+
+  /* تغيير حجم الخط في الأقسام */
+  #home h3, #aboutme h2, #skills h2, #Volunteering h2, #projects h2 {
+    font-size: 2rem; /* تقليل حجم الخط */
+  }
+
+  /* تحسين المسافات الداخلية */
+  #home, #aboutme, #skills, #Volunteering, #projects {
+    padding: 20px 5%;
+  }
+
+  /* تقليل عرض الصور في قسم الهوم */
+  .myphoto {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* تعديل العرض في المهارات */
+  .skill {
+    width: 100%; /* جعل البطاقات تأخذ العرض الكامل */
+    margin-bottom: 10px;
+  }
+
+  /* تعديل عرض الأزرار */
+  .drop-btn, .more-btn {
+    width: 100%; /* جعل الأزرار تأخذ العرض الكامل */
+    padding: 15px 0;
+    font-size: 1rem;
+  }
+
+  /* تغيير حجم الأيقونات في الفوتر */
+  .social-icons img {
+    width: 30px;
+  }
+}
+
+/* استجابة للشاشات الصغيرة جداً (الهواتف المحمولة) */
+@media (max-width: 480px) {
+  /* تحسين تصميم النقر على الأزرار */
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* تقليل حجم الخط */
+  .navbar .nav-links a {
+    font-size: 0.8rem;
+  }
+
+  
+  /* جعل العرض أقل للأقسام */
+  #home, #aboutme, #skills, #Volunteering, #projects {
+    padding: 15px 5%;
+    width: 100%;
+  }
+
+  /* تقليل المسافات بين الأقسام */
+  .home-content, .slider-container, .fade-in {
+    gap: 15px;
+  }
+
+  /* تحسين المسافات حول الصور */
+  .home-image img {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* تغيير تصميم الفوتر */
+  footer {
+    padding: 30px 5%;
+  }
+}
+
+/* تأثير الظهور التدريجي */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* الحركة البسيطة من الأسفل */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* تطبيق الأنيميشن على العناصر */
+.fade-in {
+  animation: fadeIn 1s ease-out forwards; /* التأثير عند الظهور */
+}
+
+/* الحركة من اليسار */
+.slide-left {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+
+.slide-left.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* الحركة من اليمين */
+.slide-right {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+
+.slide-right.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+html {
+  scroll-behavior: smooth; /* يجعل التمرير سلسًا */
+}
+/* زر القائمة (Hamburger) */
+.hamburger {
+  display: none; /* إخفاء الزر في الشاشات الكبيرة */
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  color: var(--primary-dark);
+  cursor: pointer;
+}
+
+.nav-links.open {
+  display: flex; /* عرض الروابط عند الضغط */
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* إظهار الزر في الشاشات الصغيرة */
+  }
+
+  /* إخفاء الروابط في الشاشات الصغيرة */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
