@@ -38,8 +38,8 @@ body::before {
 /* الهيدر واللوجو */
 .navbar {
   display: flex;
-  justify-content: space-between;
-  padding: 2rem 5%;
+  justify-content: center; /* لتوسيط العناصر */
+  padding: 1rem 5%;
   backdrop-filter: blur(10px); /* تأثير البلور على الخلفية */
   position: fixed; /* تثبيت الهيدر */
   top: 0;
@@ -47,7 +47,9 @@ body::before {
   width: 100%;
   z-index: 1000;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* إضافة تأثير الظل */
+  margin-left: 10px;
 }
+
 
 /* تصميم روابط الهيدر لتأثير الزجاج */
 .nav-links {
@@ -67,6 +69,7 @@ body::before {
   -webkit-backdrop-filter: blur(10px); /* ضمان التوافق في المتصفحات القديمة */
   border: 1px solid rgba(255, 255, 255, 0.2); /* حد شفاف */
   transition: all 0.3s ease; /* تأثير التحول */
+  
 }
 
 /* تأثير hover عند التمرير */
@@ -75,6 +78,7 @@ body::before {
   background: rgba(255, 255, 255, 0.2); /* تغيير الخلفية عند التمرير */
   transform: scale(1.05); /* تكبير الرابط عند التمرير */
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3); /* إضافة تأثير الظل عند التمرير */
+  
 }
 
 /* تأثير الحركة عند التمرير */
@@ -88,12 +92,13 @@ body::before {
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--primary-dark);
+  
 }
 
 
 /* إضافة مسافة بين الهيدر والمحتوى */
 body {
-  margin-top: 80px; /* المسافة التي ستظهر تحت الهيدر */
+  margin-top: 95px; /* المسافة التي ستظهر تحت الهيدر */
 }
 
 
