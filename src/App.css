@@ -16,6 +16,7 @@ body {
   background-color: var(--bg-light);
   color: var(--text-dark);
   overflow-x: hidden;
+  font-size: 17px !important;
 }
 
 /* الأشكال الدائرية في الخلفية */
@@ -48,6 +49,7 @@ body::before {
   z-index: 1000;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* إضافة تأثير الظل */
   margin-left: 10px;
+  
 }
 
 
@@ -98,7 +100,7 @@ body::before {
 
 /* إضافة مسافة بين الهيدر والمحتوى */
 body {
-  margin-top: 95px; /* المسافة التي ستظهر تحت الهيدر */
+  margin-top: 95px !important; /* المسافة التي ستظهر تحت الهيدر */
 }
 
 

@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import './App.css'; // استيراد الأنماط الخاصة بك
+import './App.css'; 
+import Rating from './Rating'; 
+import "platformscode-new-react/dist/style.css"; 
+
 
 
 // مكون Navbar
@@ -272,6 +275,7 @@ const App = () => {
       <Skills />
       <Volunteering />
       <Projects />
+      < Rating/>
       <Footer />
     </div>
   );
